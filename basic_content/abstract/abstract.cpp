@@ -22,7 +22,8 @@ public:
   void f() { cout << "B:f()" << endl; }
 };
 int main() {
-  B b;
-  b.g();
+  B*b=new B();
+  *b.f();
+  delete b;
   return 0;
 }
